@@ -1,0 +1,357 @@
+/* Defaults for entire webpage */
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: ghostwhite;
+    width: 100%;
+    font-family: 'Open sans', sans-serif;
+}
+/* Styling for Navbar and hero image*/
+/* Hero image */
+.hero-image{
+    margin-bottom: 0;
+}
+.hero-image #big-image {
+    width: 100%;
+    height: 800px;
+}
+.hero-image .centered {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.hero-image .arrow-down{
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+}
+.hero-image h1{
+    color: ghostwhite;
+    font-size: 80px;
+}
+.hero-image li {
+    color: ghostwhite;
+    font-size: 40px;
+}
+/* Navbar */
+nav {
+    border-radius: 10px;
+    background-color: ghostwhite;
+    min-height: 56px;
+    position: sticky;
+    top: 2px;
+    z-index: 6;
+}
+nav:hover {
+    border: solid;
+    border-color: #4dcfe0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.rightnav {
+    float: right;
+} 
+nav .left {
+    float: left;
+}
+nav button {
+    border: none;
+    background-color: ghostwhite;
+    font-size: 24px;
+    display: block;
+    border-radius: 4px;
+    color: #4dcfe0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a{
+    font-size: 24px;
+    display: block;
+    border-radius: 4px;
+    color: #4dcfe0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a img {
+    height: 22px;
+}
+nav a:hover, button:hover {
+    background-color: #4dcfe0;
+    color: aliceblue;   
+}
+#active {
+    text-decoration: underline;
+}
+nav .dropbtn {
+    display: inline-block
+}
+nav .dropdown{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+nav .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    z-index: 6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+nav .dropdown:hover .dropdown-content{
+    display: block;
+}
+nav .dropdown-content a {
+    float: none;
+    color: #4dcfe0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: ghostwhite;
+
+}
+nav .dropdown-content a:hover{
+    color: ghostwhite;
+    background-color: #4dcfe0;
+}
+/* Homepage */
+
+
+main {   
+    float: left;
+    width: 65%;
+}
+aside {
+    float: left;
+    width: 35%;
+}
+.card {
+    background-color: white;
+    border: solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+}
+article {
+    font-family: 'Open sans', sans-serif;
+    background-color: white;
+    border: solid #ccc;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 75px;
+}
+article h2 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.card:hover {
+    /* Found on W3 schools for box shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.card iframe {
+    width: 100%;
+    height: 500px;
+}
+.card img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.card p {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* Got from w3schools on making webpage responsive */
+@media screen and (max-width: 900px) {
+  main, aside  {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.big-word {
+    font-size: 28px;
+    color: lightcoral;
+    text-decoration: underline;
+}
+.highlight {
+    background-color: yellow;
+}
+/* Footer */
+footer {
+    font-size: 150%;
+    background-color: #4dcfe0;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+/* Taken for W3schools page on positions and how to make something fixed*/
+#readme {
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+    height: 110px;
+    width: 300px;
+    font-size: 28px;
+    font-family: sans-serif;
+    background-color: lightcoral;
+    border-radius: 10px;
+    color: ghostwhite;
+}
+/* pdfs for logtable and past papers pages */
+.fullpdf {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 1000px;
+}
+.smallpdf {
+    margin-left: 100px;
+    margin-right: auto;
+    width: 80%;
+    height: 700px;
+}
+.pdf {
+    margin-top: 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* curriculum page */
+
+table {
+    text-align: center;
+    font-family: sans-serif;
+}
+th{
+    padding: 15px;
+    font-size: 24px;
+}
+#strands{
+    top: 60px;
+    position: sticky;
+}
+#strands table{
+    border-collapse: collapse;
+    margin: 15px;
+    font-size: 24px;
+    float: right;
+    width: 90%;
+    height: 500px;
+}
+#strands tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#trends table{
+    position: relative;
+}
+/* Got chequered appearence for table searching on stack overflow */
+#trends tr:nth-child(even) td:nth-child(odd), #trends tr:nth-child(odd) td:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+#leftside {
+    float: left;
+    width: 60%;
+}
+.scrollspace{
+    height: 5000px;
+}
+
+#trends table {
+    position: relative;
+    font-size: 20px;
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 15px;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+#trends table, th, td, tr{
+    border: 1px solid;
+    border-color: gray;
+}
+
+
+
+
+
+/* Gallery Page Title Layout */
+.clean-title {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: solid 5px lightcoral;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+.clean-title h2 {
+    color: lightcoral;
+}
+.clean-title h3 {
+    
+}
+/* Gallery Gallery Layout - Used W3Schools Gallery pages as reference*/
+div.gallery {
+    border-radius: 10px;
+    margin: 40px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 380px;
+    height: 440px;
+    background-color: white;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+    /* Found on W3 schools for box shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.gallery img {
+    border-radius: 10px;
+    width: 100%;
+    height: 85%;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+video {
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
